@@ -12,10 +12,16 @@ export default function Home() {
   ];
  
   return (
+    <>
     <div className='w-full h-[400px] relative'>
       <div style={{background: `url(${slides[0].url})`}} className='h-full bg-center bg-contain duration-500'>
 
       </div>
+
     </div>
+    <div className='items-center w-full font-bold'>
+      <h2>Your partner in organizational transformation</h2>
+    </div>
+    </>
   )
 }

@@ -40,7 +40,6 @@ export default function Header() {
                        translate-x-0 transition-transform 
                        group-hover:translate-x-[23rem] duration-500
                        ease-in-out rounded-sm'>
-                       
                        </div>
                        Hello World
                      </div>
@@ -54,7 +53,10 @@ export default function Header() {
                     <li  onClick={()=>navigate("/contact")} className={`cursor-pointer py-9 text-sm font-semibold 
                     text-gray-400 border-b-[3px] border-b-transparent hover:border-b-blue-500
                      ${pathMatchRoute("/contact") && "text-black border-b-blue-500"}`}>Contact</li>
-                    <li ><Link target={"_blank"} to="/admin">Sign In</Link></li>
+                    <li className={`cursor-pointer py-9 text-sm font-semibold 
+                    text-gray-400 border-b-[3px] border-b-transparent`} >
+                      <Link className='hover:bg-blue-500 hover:text-white px-3 py-2 rounded-lg' 
+                      target={"_blank"} to="/admin">Sign In</Link></li>
                 </ul>
             </div>
         </header>
