@@ -22,7 +22,7 @@ export default function Header() {
             <div>
                 <ul className='flex space-x-10 uppercase'>
                     <li  onClick={()=>navigate("/")} className={` cursor-pointer py-9 text-sm font-semibold 
-                    text-gray-400 border-b-[3px] border-b-transparent hover:border-b-blue-500
+                    text-gray-400 border-b-[3px] border-b-transparent hover:border-b-blue-500 hover:text-blue-600
                      ${pathMatchRoute("/") && "text-black border-b-blue-500"}`}>Home
                      </li>
                     <li  onClick={()=>navigate("/about")} className={`relative group cursor-pointer py-9 text-sm font-semibold 
@@ -44,14 +44,17 @@ export default function Header() {
                        Hello World
                      </div>
                      </div></li>
-                    <li  onClick={()=>navigate("/services")} className={`cursor-pointer py-9 text-sm font-semibold 
+                    <li  onClick={()=>navigate("/services")} className={`hover:text-blue-600
+                     cursor-pointer py-9 text-sm font-semibold 
                     text-gray-400 border-b-[3px] border-b-transparent hover:border-b-blue-500
                      ${pathMatchRoute("/services") && "text-black border-b-blue-500"}`}>Service</li>
-                    <li  onClick={()=>navigate("/news")} className={`cursor-pointer py-9 text-sm font-semibold 
+                    <li  onClick={()=>navigate("/news")} className={`hover:text-blue-600
+                     cursor-pointer py-9 text-sm font-semibold 
                     text-gray-400 border-b-[3px] border-b-transparent hover:border-b-blue-500
                      ${pathMatchRoute("/news") && "text-black border-b-blue-500"}`}>News</li>
-                    <li  onClick={()=>navigate("/contact")} className={`cursor-pointer py-9 text-sm font-semibold 
-                    text-gray-400 border-b-[3px] border-b-transparent hover:border-b-blue-500
+                    <li  onClick={()=>navigate("/contact")} className={`hover:text-blue-600
+                    cursor-pointer py-9 text-sm font-semibold text-gray-400 border-b-[3px] 
+                    border-b-transparent hover:border-b-blue-500
                      ${pathMatchRoute("/contact") && "text-black border-b-blue-500"}`}>Contact</li>
                     <li className={`cursor-pointer py-9 text-sm font-semibold 
                     text-gray-400 border-b-[3px] border-b-transparent`} >
